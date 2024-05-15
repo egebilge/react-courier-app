@@ -1,6 +1,6 @@
 Merhabalar,
 
-Projeyi başlatmak için kullanabileceğiniz üç farklı komut bulunmaktadır:
+Projeyi başlatmak için kullanabileceğiniz komutlar:
 
 1. **npm run start**: Bu komut, Node Package Manager (npm) aracılığıyla projenizi başlatmanızı sağlar.
 2. **yarn start**: Yarn kullanarak projenizi başlatmanız için bu komutu kullanabilirsiniz.
