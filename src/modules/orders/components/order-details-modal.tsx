@@ -7,14 +7,7 @@ import {
   DialogFooter,
 } from "src/components/ui/dialog";
 import { Button } from "src/components/ui/button";
-
-type OrderType = {
-  id: number;
-  address: string;
-  timestamp: string;
-  products: { name: string; quantity: number }[];
-  status: string;
-};
+import { OrderType } from "src/types";
 
 type OrderDetailsModalProps = {
   order: OrderType;

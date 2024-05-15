@@ -6,13 +6,7 @@ import {
   TableCell,
   TableHead,
 } from "src/components/ui/table";
-
-type CourierType = {
-  id: number;
-  name: string;
-  phone: string;
-  vehicle: string;
-};
+import { CourierType } from "src/types";
 
 function CouriersTable({ couriers }: { couriers: CourierType[] }) {
   return (
