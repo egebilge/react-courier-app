@@ -1,0 +1,78 @@
+{
+  "orders": [
+    {
+      "id": 1,
+      "address": "123 Elm St",
+      "timestamp": "2024-05-10T10:30:00Z",
+      "products": [
+        { "name": "Laptop", "quantity": 1 },
+        { "name": "Mouse", "quantity": 2 }
+      ],
+      "status": "pending",
+      "basketId": null
+    },
+    {
+      "id": 2,
+      "address": "456 Maple St",
+      "timestamp": "2024-05-11T11:15:00Z",
+      "products": [{ "name": "Monitor", "quantity": 1 }],
+      "status": "on-the-way",
+      "basketId": 1
+    },
+    {
+      "id": 3,
+      "address": "789 Oak St",
+      "timestamp": "2024-05-12T12:00:00Z",
+      "products": [{ "name": "Keyboard", "quantity": 1 }],
+      "status": "delivered",
+      "basketId": 1
+    },
+    {
+      "id": 4,
+      "address": "321 Pine St",
+      "timestamp": "2024-05-13T13:45:00Z",
+      "products": [{ "name": "Headphones", "quantity": 1 }],
+      "status": "completed",
+      "basketId": null
+    },
+    {
+      "id": 5,
+      "address": "654 Cedar St",
+      "timestamp": "2024-05-14T14:30:00Z",
+      "products": [{ "name": "Tablet", "quantity": 1 }],
+      "status": "completed",
+      "basketId": null
+    }
+  ],
+  "baskets": [
+    {
+      "id": 1,
+      "courierId": 1,
+      "status": "on-the-way",
+      "orders": [
+        {
+          "id": 3,
+          "address": "789 Oak St",
+          "timestamp": "2024-05-12T12:00:00Z",
+          "products": [{ "name": "Keyboard", "quantity": 1 }],
+          "status": "delivered",
+          "basketId": 1
+        }
+      ]
+    }
+  ],
+  "couriers": [
+    {
+      "id": 1,
+      "name": "John Doe",
+      "phone": "+1234567890",
+      "vehicle": "Motorbike"
+    },
+    {
+      "id": 2,
+      "name": "Jane Smith",
+      "phone": "+0987654321",
+      "vehicle": "Van"
+    }
+  ]
+}
